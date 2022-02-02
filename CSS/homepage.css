@@ -1,8 +1,49 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: url('../Fonts/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Enchanted Sword";
+    src: url('../Fonts/EnchantedSword.ttf');
+}
+
 body {
-    color: #777;
+    color: rgb(0, 0, 0);
+    background-color: rgb(212, 212, 212);
     font-family: "Avenir", Verdana, sans-serif;
 }
 
 #readme {
     margin-top: 10px;
+}
+
+.headerContainer {
+    text-align: center;
+    margin-top: 2rem;
+}
+.headerContainer .content{
+    display: inline-block;
+}
+.headerContainer .content .overHead {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.headerContainer .content h1 {
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 4rem;
+    margin: 0rem;
+}
+.headerContainer .content .subHeader {
+    text-align: center;
+    font-family: 'Enchanted Sword';
+    font-size: 1.5rem;
+    margin: 0rem;
+}
+
+.pageContent {
+    width: 80vw;
+    margin: auto;
 }
