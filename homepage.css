@@ -34,7 +34,9 @@ body {
     text-align: center;
     font-family: 'Bebas Neue';
     font-size: 4rem;
-    margin: 0rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0rem;
+    text-decoration: underline;
 }
 .headerContainer .content .subHeader {
     text-align: center;
@@ -46,4 +48,29 @@ body {
 .pageContent {
     width: 80vw;
     margin: auto;
+}
+.tableContainer {
+    width: 100%;
+    margin: auto;
+}
+.tableContainer table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid black;
+}
+.tableContainer th, td {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+.tableContainer tr {
+    border-bottom: 1px solid black;
+    height: 1rem;
+    transition: background-color 1s;
+}
+.tableContainer .trHead, .trHead:hover {
+    background-color: rgb(170, 170, 170);
+}
+.tableContainer tr:hover {
+    background-color: #a0a0a086;
 }
