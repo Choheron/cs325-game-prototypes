@@ -9,8 +9,11 @@
 }
 
 body {
+    height: 100vh;
     color: rgb(0, 0, 0);
-    background-color: rgb(212, 212, 212);
+    background: rgb(166,166,166);
+    background: linear-gradient(0deg, rgba(166,166,166,1) 0%, rgba(214,214,214,1) 100%);
+    background-repeat: no-repeat;
     font-family: "Avenir", Verdana, sans-serif;
 }
 
@@ -58,6 +61,7 @@ body {
     border-collapse: collapse;
     text-align: center;
     border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 .tableContainer th, td {
     padding-top: 0.2rem;
@@ -68,9 +72,9 @@ body {
     height: 1rem;
     transition: background-color 1s;
 }
-.tableContainer .trHead, .trHead:hover {
-    background-color: rgb(170, 170, 170);
-}
-.tableContainer tr:hover {
+.tableContainer tr:not(:first-child):hover {
     background-color: #a0a0a086;
+}
+.tableContainer .trHead {
+    background-color: rgba(170, 170, 170, 1);
 }
