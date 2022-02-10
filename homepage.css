@@ -11,8 +11,8 @@
 body {
     height: 100vh;
     color: rgb(0, 0, 0);
-    background: rgb(166,166,166);
-    background: linear-gradient(0deg, rgba(166,166,166,1) 0%, rgba(214,214,214,1) 100%);
+    background: rgb(74,0,79);
+    background: linear-gradient(0deg, rgba(74,0,79,1) 5%, rgba(85,19,113,1) 35%, rgba(121,83,152,1) 70%, rgba(193,144,226,1) 100%);
     background-repeat: no-repeat;
     font-family: "Avenir", Verdana, sans-serif;
 }
@@ -61,7 +61,7 @@ body {
     border-collapse: collapse;
     text-align: center;
     border: 1px solid black;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 .tableContainer th, td {
     padding-top: 0.2rem;
@@ -69,12 +69,13 @@ body {
 }
 .tableContainer tr {
     border-bottom: 1px solid black;
-    height: 1rem;
-    transition: background-color 1s;
+    height: 2rem;
+    transition: background-color 0.6s, height 0.6s;
 }
 .tableContainer tr:not(:first-child):hover {
-    background-color: #a0a0a086;
+    background-color: rgb(180, 180, 180);
+    height: 5rem;
 }
 .tableContainer .trHead {
-    background-color: rgba(170, 170, 170, 1);
+    background-color: rgb(105, 105, 105);
 }
