@@ -4,6 +4,15 @@
     <meta charset="utf-8">
     <title>TC - CS 325 Game Prototypes</title>
     <link rel="stylesheet" href="homepage.css">
+
+    <script>
+        // Script to confirm if the user would like to visit a link to a prototype game.
+        function protoLinkConfirm() {
+            let alert = "WARNING: You have clicked a link to a prototype game, this DOES NOT reflect the final product.";
+            alert += "\n\nDo you want to continue?"
+            return confirm(alert);
+        }
+    </script>
 </head>
 
 <body>
@@ -22,6 +31,9 @@
     <br />
     <br />
     <div class="pageContent">
+        <div class="sectionHeader">
+            <h3>ASSIGNMENTS/GAMES:</h3>
+        </div>
         <div class="tableContainer">
             <table style="width: 60%">
                 <tr class="trHead"> <!-- Header row for table of assignments -->
@@ -44,15 +56,15 @@
                     </td>
                     <td>Feb 3rd</td>
                 </tr>
-                <tr class="ursaRow"> <!-- Digital Assignment 1A -->
+                <tr class="ursaRow"> <!-- Digital Assignment 1A [PROTOTYPE] -->
                     <td>Digital Assignment 1A</td>
                     <td class="gameLinkCell">
-                        <a href="https://microstudio.io/i/ChoHeron/ursamanor2/">
+                        <a href="https://microstudio.io/i/ChoHeron/ursamanor2/" onclick="return protoLinkConfirm();">
                             Ursa Manor - Prototype
                         </a>
                     </td>
                     <td class="downloadCell">
-                        <a href="./zips/ursamanor_prototype.zip" download>
+                        <a href="./zips/ursamanor_prototype.zip" onClick="return confirm('Download PROTOTYPE Game?');" download>
                             DOWNLOAD 
                         </a>
                     </td>
@@ -152,6 +164,34 @@
                     <td>
                         May 05th
                     </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <div class="sectionHeader">
+            <h3>LIBRARIES:</h3>
+        </div>
+        <div class="tableContainer">
+            <table style="width: 60%">
+                <tr class="trHead"> <!-- Header row for table of libraries -->
+                    <th style="width: 20%">Language</th>
+                    <th style="width: 30%">Library/Title</th>
+                    <th style="width: 30%">Download</th>
+                    <th style="width: 20%">Version Number</th>
+                </tr>
+                <tr> <!-- Toggle Button Library -->
+                    <td>JavaScript</td>
+                    <td class="gameLinkCell">
+                        <a href="https://microstudio.io/i/ChoHeron/buttonblueprint/">
+                            Toggle Button
+                        </a>
+                    </td>
+                    <td class="downloadCell">
+                        <a href="./zips/buttonblueprint.zip" download>
+                            DOWNLOAD 
+                        </a>
+                    </td>
+                    <td>V1.0</td>
                 </tr>
             </table>
         </div>
