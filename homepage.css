@@ -12,7 +12,7 @@ body {
     height: 100vh;
     color: rgb(0, 0, 0);
     background: rgb(74,0,79);
-    background: linear-gradient(0deg, rgba(74,0,79,1) 5%, rgba(85,19,113,1) 35%, rgba(121,83,152,1) 70%, rgba(193,144,226,1) 100%);
+    background: linear-gradient(0deg, rgba(74,0,79,1) 5%, rgba(85,19,113,1) 20%, rgba(121,83,152,1) 70%, rgba(193,144,226,1) 100%);
     background-repeat: no-repeat;
     font-family: "Avenir", Verdana, sans-serif;
 }
