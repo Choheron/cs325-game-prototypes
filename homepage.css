@@ -69,7 +69,6 @@ body {
     border-collapse: collapse;
     text-align: center;
     border: 1px solid black;
-    
 }
 .tableContainer th, td {
     padding-top: 0.2rem;
@@ -86,6 +85,11 @@ body {
     height: 2.5rem;
     background-color: rgba(249, 255, 181, 0.7);
     transition: background-color 0.6s, height 0.6s;
+}
+.tableContainer tr .downloadCell p {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin: auto;
 }
 .tableContainer tr:not(:first-child):hover {
     background-color: rgb(180, 180, 180);
